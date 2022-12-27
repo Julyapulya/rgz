@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <script type="text/javascript" src="js/gallery.js"></script>
+</head>
+
+<body>
+    <input type="range" id="r1" oninput="changeSize()">
+    <span onclick="closeSlide()" id="closebtn">&times;</span>
+    <button onclick="startSlideShow()" id="start" type="button">Начать</button>
+    <button onclick="finishSlideShow()" id="stop" type="button">Остановить</button>
+    <h2 style="text-align:center">Галерея "Хихи и хаха"</h2>
+    <!-- создание изображений с текстом -->
+    <div class="mySlides">
+        <div class="numbertext">1 / 20</div>
+        <img src="img/11.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 20</div>
+        <img src="img/1.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 20</div>
+        <img src="img/2.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 20</div>
+        <img src="img/3.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">5 / 20</div>
+        <img src="img/4.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 20</div>
+        <img src="img/5.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">7 / 20</div>
+        <img src="img/6.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">8 / 20</div>
+        <img src="img/7.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">9 / 20</div>
+        <img src="img/8.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">10 / 20</div>
+        <img src="img/9.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">11 / 20</div>
+        <img src="img/10.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">12 / 20</div>
+        <img src="img/111.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">13 / 20</div>
+        <img src="img/12.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">14 / 20</div>
+        <img src="img/13.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">15 / 20</div>
+        <img src="img/14.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">16 / 20</div>
+        <img src="img/15.jpg">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">17 / 20</div>
+        <img src="img/16.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">18 / 20</div>
+        <img src="img/17.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">19 / 20</div>
+        <img src="img/18.jpg">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">20 / 20</div>
+        <img src="img/20.jpg">
+    </div>
+
+    <!-- кнопки далее и назад -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- изображения в миниатюре -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+    <div id="miniatures">
+        <div class="column">
+            <img class="demo cursor" src="img/11.jpg" style="width:100%" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/1.jpg"  style="width:100%" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/2.jpg" style="width:100%" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/3.jpg" style="width:100%" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/4.jpg"  style="width:100%" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/5.jpg" style="width:100%" onclick="currentSlide(6)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/6.jpg"  style="width:100%" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/7.jpg"  style="width:100%" onclick="currentSlide(8)">
+        </div>
+        <div class="column">
+
+            <img class="demo cursor" src="img/8.jpg"  style="width:100%" onclick="currentSlide(9)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/9.jpg" style="width:100%" onclick="currentSlide(10)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/10.jpg" style="width:100%" onclick="currentSlide(11)">
+        </div>
+
+        <div class="column">
+            <img class="demo cursor" src="img/111.jpg"  style="width:100%" onclick="currentSlide(12)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/12.jpg" style="width:100%" onclick="currentSlide(13)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/13.jpg" style="width:100%" onclick="currentSlide(14)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/14.jpg"  style="width:100%" onclick="currentSlide(15)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/15.jpg" style="width:100%" onclick="currentSlide(16)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/16.jpg" style="width:100%" onclick="currentSlide(17)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/17.jpg" style="width:100%" onclick="currentSlide(18)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/18.jpg" style="width:100%" onclick="currentSlide(19)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img/19.jpg" style="width:100%" onclick="currentSlide(20)">
+        </div>
+        
+    </div>
+</body>
+</html>
